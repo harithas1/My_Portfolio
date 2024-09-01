@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haritha's bio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+       * {
+        box-sizing: border-box;
+       }
+
+       html {
+        scroll-behavior: smooth;
+       }
+
+       body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(to left, rgb(242, 242, 101), skyblue);
+       }
+
+       header {
+        padding: 16px;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        background-color: lightgray;
+       }
+
+       .links .link {
+        margin: auto 16px;
+        font-weight: bold;
+       }
+
+       #intro {
+        /* background-color: blanchedalmond; */
+        /* background: linear-gradient(to left, rgb(154, 145, 145),rgb(194, 100, 116)); */
+        text-align: center;
+        padding: 16px;
+        /* border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%; */
+        border-bottom: 2px solid;
+       }
+
+       #intro .tagline {
+        color: rgb(146, 8, 8);
+        font-weight: bold;
+        font-size: 1.5rem;
+       }
+
+       #dynamic-text {
+        color: rgb(146, 8, 8);
+        font-weight: bold;
+        font-size: 1.5rem;
+       }
+
+       
+       .profile-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid rgb(45, 175, 226);
+        border-style: double;
+        /* border-top-left-radius: 40%;
+        border-bottom-right-radius: 40%; */
+       }
+
+      
+
+       #dynamic-text {
+        color: royalblue;
+       }
+
+       a {
+        text-decoration: none;
+       }
+
+       #linkedin {
+        font-size: 25px;
+        color: blue
+       }
+
+       #instagram   {
+        font-size: 25px;
+        color: rgb(173, 45, 107);
+       }
+
+       table {
+        border-collapse: collapse;
+        border: 4px solid black;
+        border-style: double;
+        padding: 5px;
+        border-radius: 10px;
+       }
+
+       th, td{
+        border-collapse: collapse;
+        border: 4px solid black;
+        border-style: double;
+        padding: 5px;
+        border-radius: 10px;
+       }
+
+       ul,ol {
+        padding: 16px;
+       }
+
+       section {
+        padding: 16px;
+       }
+
+       section>h2{
+        text-align: center;
+       }
+
+       footer {
+        padding: 8px;
+        border-top: 2px solid;
+        text-align: center;
+       }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header id="mobile-view">
+            <button id="open-menu">Menu</button>
+            <nav id="mobile-nav" class="links">
+                <a class="link" href="#about-me">About me</a>
+                <a class="link" href="#education">Educational Qualification</a>
+                <a class="link" href="#hobbies">Hobbies</a>
+                <a class="link" href="#technologies">Technologies</a>
+                <button id="close-menu">X</button>
+            </nav>
+        </header>
+        <header id="main-header" class="nav-header">
+            <nav class="links">
+                <a class="link" href="#about-me">About me</a>
+                <a class="link" href="#education">Educational Qualification</a>
+                <a class="link" href="#hobbies">Hobbies</a>
+                <a class="link" href="#technologies">Technologies</a>
+            </nav>
+        </header>
+        <article id="intro">
+            <img class="profile-image" src="haritha.jpg" alt="profile image">
+            <h2>Hi! I a'm Haritha</h2>
+            <p class="tagline">I'm a <span id="dynamic-text"></span></p>
+
+            <section>
+
+                <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/haritha-s-7251a42b0/">
+                    <i class="fab fa-linkedin linkedin-icon"></i>
+                </a>
+                <a id="instagram" target="_blank" href="instagram">
+                    <i class="fab fa-instagram instagram-icon"></i>
+                </a>
+
+            </section>
+        </article>
+
+        <section id="about-me">
+            <h2>
+                About me
+            </h2>
+            <p>Hello, I'm Haritha. Currently exploring frontend development at JTD Full Stack Bootcamp, with a foundation in Python and Data Structures and Algorithms (DSA). </p>
+            <p>I've enjoyed creating projects like a Stickman Hangman Game, Bank Simulation, and a Quiz Game. As I continue my internship at JTD Foundation, I'm dedicated to expanding my skills and knowledge.</p>
+            <p> I'm eager to deepen my understanding of tech and contribute to impactful projects.</p>
+        </section>
+
+        <section id="#education">
+            <h2>Educational Qualifications</h2>
+            <ol>
+                <li>B. Sc(MPC)</li>
+                <li>Intermediate(MPC)</li>
+            </ol>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Programming</li>
+                <li>Teaching</li>
+                <li>Drawing</li>
+                <li>Listening to music</li>
+            </ul>
+        </section>
+
+        <section id="technologies">
+            <h2>Technologies known to me</h2>
+            <table>
+                <tr>
+                    <th>Frontend</th>
+                    <th>Backend</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>DSA</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        Created by Haritha ©2024
+    </footer>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
